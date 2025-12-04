@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>프로젝트 상세 - 위험성 평가 디지털화</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        .project-detail {
+            padding: 100px 0;
+        }
+
+        .project-img {
+            margin-bottom: 30px;
+        }
+
+        .project-info {
+            margin-bottom: 30px;
+        }
+
+        .comparison-box {
+            border: 1px solid #eee;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll" href="index.html">양성욱 | 안전 & AI</a>
+        </div>
+    </nav>
+
+    <section class="project-detail">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="title-a mb-5">현장 위험성 평가 결과 디지털화 및 개선</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="project-img">
+                        <img src="img/work-3.jpg" alt="프로젝트 이미지" class="img-fluid">
+                    </div>
+                    <div class="project-content">
+                        <h3>시스템 구축 배경</h3>
+                        <p>
+                            기존의 위험성 평가는 종이 문서로 작성되어 데이터의 축적과 활용이 어려웠습니다.
+                            현장 관리자가 수기로 작성한 문서는 분실 위험이 있고, 통계 처리를 위해서는 다시 엑셀로 입력해야 하는 이중 작업이 발생했습니다.
+                        </p>
+
+                        <h3>시스템 구축 전후 비교</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="comparison-box text-center">
+                                    <h4>Before (기존)</h4>
+                                    <img src="https://via.placeholder.com/300x200?text=Paper+Form" alt="종이 문서"
+                                        class="img-fluid mb-2">
+                                    <p class="small">종이 문서 작성 -> 수거 -> 엑셀 재입력 (비효율적)</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="comparison-box text-center">
+                                    <h4>After (개선)</h4>
+                                    <img src="https://via.placeholder.com/300x200?text=Digital+Form" alt="디지털 입력 폼"
+                                        class="img-fluid mb-2">
+                                    <p class="small">모바일/태블릿 직접 입력 -> DB 자동 저장 (효율적)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3>기술 스택 및 구현</h3>
+                        <ul>
+                            <li><strong>Frontend:</strong> HTML5, CSS3, Vanilla JavaScript (별도의 프레임워크 없이 경량화 구현)</li>
+                            <li><strong>Backend:</strong> Python Flask (간단한 API 서버)</li>
+                            <li><strong>Database:</strong> SQLite (로컬 테스트용) / MySQL (배포용)</li>
+                        </ul>
+                        <p>
+                            반응형 웹 디자인을 적용하여 현장에서 태블릿이나 스마트폰으로 즉시 접속하여 위험 요인을 입력하고 사진을 업로드할 수 있도록 구현했습니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project-info">
+                        <h3>Project Info</h3>
+                        <ul>
+                            <li><strong>Category:</strong> 시스템 구축</li>
+                            <li><strong>Date:</strong> 2024.03</li>
+                            <li><strong>Tech Stack:</strong> HTML, CSS, Vanilla JS, Flask</li>
+                            <li><strong>Artifact:</strong> <a href="docs/project-3-plan.md" target="_blank">구현 계획서
+                                    (Implementation Plan)</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="copyright-box">
+                        <p class="copyright">&copy; Copyright <strong>양성욱</strong>. All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

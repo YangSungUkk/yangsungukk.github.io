@@ -7,7 +7,7 @@
 
 ## 🔗 포트폴리오 웹사이트 바로가기 (핵심!)
 
-**[https://your-safety-portfolio-url.com](https://your-safety-portfolio-url.com)**
+**[https://yangsungukk.github.io/](https://yangsungukk.github.io/)**
 
 ---
 

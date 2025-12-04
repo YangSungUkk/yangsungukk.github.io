@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>프로젝트 상세 - 산업재해 패턴 분석</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        .project-detail {
+            padding: 100px 0;
+        }
+
+        .project-img {
+            margin-bottom: 30px;
+        }
+
+        .project-info {
+            margin-bottom: 30px;
+        }
+
+        .viz-gallery img {
+            margin-bottom: 15px;
+            width: 100%;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll" href="index.html">양성욱 | 안전 & AI</a>
+        </div>
+    </nav>
+
+    <section class="project-detail">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="title-a mb-5">산업재해 발생 패턴 분석 시스템</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="project-img">
+                        <img src="img/work-2.jpg" alt="프로젝트 이미지" class="img-fluid">
+                    </div>
+                    <div class="project-content">
+                        <h3>데이터 출처 및 개요</h3>
+                        <p>
+                            본 프로젝트는 <strong>한국산업안전보건공단(KOSHA)의 산업재해 통계 데이터(2018-2023)</strong>를 활용하였습니다.
+                            수만 건의 재해 데이터를 분석하여, 특정 시기나 공정에서 반복적으로 발생하는 재해 패턴을 식별하고자 했습니다.
+                        </p>
+
+                        <h3>주요 시각화 결과</h3>
+                        <p>Python의 <code>Pandas</code>와 <code>Matplotlib/Seaborn</code>을 활용하여 데이터를 분석하고 시각화했습니다.</p>
+                        <div class="row viz-gallery">
+                            <div class="col-md-4">
+                                <img src="https://via.placeholder.com/400x300?text=Visualization+1" alt="월별 재해 발생 추이">
+                                <p class="text-center text-muted small">월별 재해 발생 추이</p>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="https://via.placeholder.com/400x300?text=Visualization+2" alt="재해 유형별 분포">
+                                <p class="text-center text-muted small">재해 유형별 분포</p>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="https://via.placeholder.com/400x300?text=Visualization+3" alt="요일별/시간대별 히트맵">
+                                <p class="text-center text-muted small">요일별/시간대별 히트맵</p>
+                            </div>
+                        </div>
+
+                        <h3>분석 결과 및 인사이트</h3>
+                        <ul>
+                            <li><strong>계절적 요인:</strong> 혹서기(7-8월)와 혹한기(12-1월)에 특정 유형의 재해(온열질환, 미끄러짐)가 급증함을 데이터로 확인했습니다.
+                            </li>
+                            <li><strong>요일별 패턴:</strong> 주초(월요일) 오전 시간대에 사고 발생 빈도가 가장 높게 나타났으며, 이는 작업 시작 전 TBM(Tool Box
+                                Meeting)의 중요성을 시사합니다.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project-info">
+                        <h3>Project Info</h3>
+                        <ul>
+                            <li><strong>Category:</strong> 데이터 분석</li>
+                            <li><strong>Date:</strong> 2023.11</li>
+                            <li><strong>Tech Stack:</strong> Python, Pandas, Matplotlib, Seaborn</li>
+                            <li><strong>Artifact:</strong> <a href="docs/project-2-plan.md" target="_blank">구현 계획서
+                                    (Implementation Plan)</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="copyright-box">
+                        <p class="copyright">&copy; Copyright <strong>양성욱</strong>. All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
